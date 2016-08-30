@@ -6,6 +6,8 @@
   <remote  name="github"
            fetch="git://github.com/"
            review="https://review.slimroms.eu/"/>
+  <remote  name="bb"
+        fetch="https://bitbucket.org" />
 
   <default revision="refs/tags/android-5.1.1_r34"
            remote="aosp"
@@ -495,8 +497,8 @@
   <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" revision="master" groups="pdk,darwin,x86" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="SlimRoms/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="github" revision="lp5.1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="UBERTC/arm-eabi-4.8" revision="master" remote="bb" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-4.8" revision="master" remote="bb" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
@@ -563,7 +565,15 @@
   <project path="hardware/samsung_slsi-cm/openmax" name="SlimRoms/hardware_samsung_slsi-cm_openmax" remote="github" revision="lp5.1"
   <!-- SamsungServiceMode -->
   <project path="packages/apps/SamsungServiceMode" name="SlimRoms/packages_apps_SamsungServiceMode" remote="github" revision="lp5.1" />
-  
+ 
+  <!--Note 3 Neo Stuff -->
+  <project path="device/samsung/hllte" name="argraur/android_device_samsung_hllte" remote="github" revision="slim-lp5.1.1" />
+  <project name="FireLord1/android_kernel_samsung_smdk5260" path="kernel/samsung/smdk5260" remote="github" revision="cm-12.1" />
+  <project name="FireLord1/android_vendor_samsung_smdk5260-common" path="vendor/samsung/smdk5260-common" remote="github" revision="cm-12.1" />
+  <project name="FireLord1/android_vendor_samsung_hllte" path="vendor/samsung/hllte" remote="github" revision="cm-12.1" />
+  <project name="FireLord1/android_vendor_samsung_hl3g" path="vendor/samsung/hl3g" remote="github" revision="cm-12.1" />
+  <project name="FireLord1/android_device_samsung_smdk5260-common" path="device/samsung/smdk5260-common" remote="github" revision="cm-12.1" />
+  <project name="FireLord1/android_hardware_samsung_slsi-cm_exynos5260" path="hardware/samsung_slsi-cm/exynos5260" remote="github" revision="cm-12.1" />
   
   <!-- Slim toolchain gcc and linaro -->
   <project path="prebuilt" name="SlimRoms/android_prebuilt" remote="github" revision="lp5.1" />
