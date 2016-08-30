@@ -562,7 +562,7 @@
   <project path="hardware/samsung_slsi-cm/exynos" name="SlimRoms/hardware_samsung_slsi-cm_exynos" remote="github" revision="lp5.1" />
   <project path="hardware/samsung_slsi-cm/exynos5" name="SlimRoms/hardware_samsung_slsi-cm_exynos5" remote="github" revision="lp5.1" />
   <project path="hardware/samsung_slsi/exynos5-insignal" name="SlimRoms/hardware_samsung_slsi_exynos5-insignal" remote="github" revision="lp5.1" />
-  <project path="hardware/samsung_slsi-cm/openmax" name="SlimRoms/hardware_samsung_slsi-cm_openmax" remote="github" revision="lp5.1"
+  <project path="hardware/samsung_slsi-cm/openmax" name="SlimRoms/hardware_samsung_slsi-cm_openmax" remote="github" revision="lp5.1" />
   <!-- SamsungServiceMode -->
   <project path="packages/apps/SamsungServiceMode" name="SlimRoms/packages_apps_SamsungServiceMode" remote="github" revision="lp5.1" />
  
